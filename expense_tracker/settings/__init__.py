@@ -10,5 +10,7 @@ elif ENVIRONMENT == 'testing':
 else:
     from .development import *
 
+# Set default Django settings module for Celery
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'expense_tracker.settings.development')
 
 # expense_tracker/settings/__init__.py
