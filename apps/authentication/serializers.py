@@ -155,4 +155,4 @@ class PasswordChangeSerializer(serializers.Serializer):
         user.save()
         return user
 
-# apps/authentication/serializers.py 
+# apps/authentication/serializers.py
