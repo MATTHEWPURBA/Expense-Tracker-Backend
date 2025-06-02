@@ -18,8 +18,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from .views import api_root, health_check
 
 urlpatterns = [
+    # Root API endpoint
+    path('', api_root, name='api_root'),
+    path('health/', health_check, name='health_check'),
+    
+    # Admin and API endpoints
     path('admin/', admin.site.urls),
     path('api/auth/', include('apps.authentication.urls')),
     path('api/transactions/', include('apps.transactions.urls')),
@@ -34,9 +40,12 @@ if settings.DEBUG:
     
     # Add debug toolbar URLs if available
     if 'debug_toolbar' in settings.INSTALLED_APPS:
-        import debug_toolbar
-        urlpatterns = [
-            path('__debug__/', include(debug_toolbar.urls)),
-        ] + urlpatterns
+        try:
+            import debug_toolbar
+            urlpatterns = [
+                path('__debug__/', include(debug_toolbar.urls)),
+            ] + urlpatterns
+        except ImportError:
+            pass
 
-        # expense_tracker/urls.py
+# expense_tracker/urls.py
