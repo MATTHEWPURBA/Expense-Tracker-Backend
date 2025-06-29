@@ -34,6 +34,7 @@ LOCAL_APPS = [
     'apps.authentication.apps.AuthenticationConfig',
     'apps.transactions.apps.TransactionsConfig',
     'apps.categories.apps.CategoriesConfig',
+    'apps.currencies.apps.CurrenciesConfig',
     'apps.analytics.apps.AnalyticsConfig',
 ]
 

@@ -1,0 +1,102 @@
+﻿{
+"currencies_currency": [
+	{
+		"id" : 1,
+		"code" : "USD",
+		"name" : "US Dollar",
+		"symbol" : "$",
+		"is_active" : true,
+		"created_at" : "2025-06-29T02:19:03.263Z",
+		"updated_at" : "2025-06-29T02:41:52.822Z"
+	},
+	{
+		"id" : 2,
+		"code" : "EUR",
+		"name" : "Euro",
+		"symbol" : "€",
+		"is_active" : true,
+		"created_at" : "2025-06-29T02:19:03.266Z",
+		"updated_at" : "2025-06-29T02:41:52.839Z"
+	},
+	{
+		"id" : 3,
+		"code" : "GBP",
+		"name" : "British Pound",
+		"symbol" : "£",
+		"is_active" : true,
+		"created_at" : "2025-06-29T02:19:03.270Z",
+		"updated_at" : "2025-06-29T02:41:52.843Z"
+	},
+	{
+		"id" : 5,
+		"code" : "CAD",
+		"name" : "Canadian Dollar",
+		"symbol" : "C$",
+		"is_active" : true,
+		"created_at" : "2025-06-29T02:19:03.274Z",
+		"updated_at" : "2025-06-29T02:41:52.854Z"
+	},
+	{
+		"id" : 6,
+		"code" : "AUD",
+		"name" : "Australian Dollar",
+		"symbol" : "A$",
+		"is_active" : true,
+		"created_at" : "2025-06-29T02:19:03.275Z",
+		"updated_at" : "2025-06-29T02:41:52.866Z"
+	},
+	{
+		"id" : 7,
+		"code" : "CHF",
+		"name" : "Swiss Franc",
+		"symbol" : "CHF",
+		"is_active" : true,
+		"created_at" : "2025-06-29T02:19:03.276Z",
+		"updated_at" : "2025-06-29T02:41:52.886Z"
+	},
+	{
+		"id" : 8,
+		"code" : "CNY",
+		"name" : "Chinese Yuan",
+		"symbol" : "¥",
+		"is_active" : true,
+		"created_at" : "2025-06-29T02:19:03.277Z",
+		"updated_at" : "2025-06-29T02:41:52.896Z"
+	},
+	{
+		"id" : 9,
+		"code" : "INR",
+		"name" : "Indian Rupee",
+		"symbol" : "₹",
+		"is_active" : true,
+		"created_at" : "2025-06-29T02:19:03.278Z",
+		"updated_at" : "2025-06-29T02:41:52.921Z"
+	},
+	{
+		"id" : 10,
+		"code" : "SGD",
+		"name" : "Singapore Dollar",
+		"symbol" : "S$",
+		"is_active" : true,
+		"created_at" : "2025-06-29T02:19:03.279Z",
+		"updated_at" : "2025-06-29T02:41:52.933Z"
+	},
+	{
+		"id" : 4,
+		"code" : "JPY",
+		"name" : "Japanese Yen",
+		"symbol" : "¥",
+		"is_active" : true,
+		"created_at" : "2025-06-29T02:19:03.273Z",
+		"updated_at" : "2025-06-29T02:41:52.848Z"
+	},
+	{
+		"id" : 12,
+		"code" : "RP",
+		"name" : "Indonesian Rupiah",
+		"symbol" : "RP",
+		"is_active" : true,
+		"created_at" : "2025-06-29T02:50:53.432Z",
+		"updated_at" : "2025-06-29T02:50:53.432Z"
+	}
+]}

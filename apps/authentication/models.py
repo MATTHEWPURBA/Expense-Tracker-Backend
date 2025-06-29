@@ -7,21 +7,8 @@ class UserProfile(models.Model):
     """
     Extended user profile model to store additional user information
     """
-    CURRENCY_CHOICES = [
-        ('USD', 'US Dollar'),
-        ('EUR', 'Euro'),
-        ('GBP', 'British Pound'),
-        ('JPY', 'Japanese Yen'),
-        ('CAD', 'Canadian Dollar'),
-        ('AUD', 'Australian Dollar'),
-        ('CHF', 'Swiss Franc'),
-        ('CNY', 'Chinese Yuan'),
-        ('INR', 'Indian Rupee'),
-        ('IDR', 'Indonesian Rupiah'),
-    ]
-    
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
-    currency = models.CharField(max_length=3, choices=CURRENCY_CHOICES, default='USD')
+    currency = models.CharField(max_length=3, default='USD', help_text='Currency code (e.g., USD, EUR, RP)')
     monthly_budget = models.DecimalField(max_digits=12, decimal_places=2, null=True, blank=True)
     avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)
     phone_number = models.CharField(max_length=20, blank=True)

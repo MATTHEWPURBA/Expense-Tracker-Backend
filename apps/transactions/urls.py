@@ -16,8 +16,12 @@ urlpatterns = [
     
     # Transaction analytics and filtering
     path('summary/', views.TransactionSummaryView.as_view(), name='summary'),
+    path('stats/', views.transaction_stats_view, name='stats'),
     path('type/<str:type>/', views.TransactionByTypeView.as_view(), name='by_type'),
     path('category/<str:category>/', views.TransactionByCategoryView.as_view(), name='by_category'),
+    
+    # Bulk operations
+    path('bulk-delete/', views.bulk_delete_transactions, name='bulk_delete'),
 ]
 
 # apps/transactions/urls.py
